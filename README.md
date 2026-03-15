@@ -1,0 +1,1 @@
+# nu-course-registration-bot
