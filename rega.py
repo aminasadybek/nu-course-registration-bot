@@ -14,10 +14,14 @@ WebDriverWait(driver, 5).until(
     EC.presence_of_element_located((By.ID, "edit-name"))
 )
 
+username = "YOUR_USERNAME"
+password = "YOUR_PASSWORD"
+
 input_element = driver.find_element(By.ID, "edit-name")
-input_element.send_keys("amina.sadybek")
+input_element.send_keys(username)
+
 input_element = driver.find_element(By.ID, "edit-pass")
-input_element.send_keys("Fromjoywithlove3" + Keys.ENTER)
+input_element.send_keys(password + Keys.ENTER)
 
 WebDriverWait(driver, 5).until(
     EC.presence_of_element_located((By.LINK_TEXT, "COURSE REGISTRATION"))
